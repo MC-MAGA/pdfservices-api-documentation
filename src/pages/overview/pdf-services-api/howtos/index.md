@@ -43,7 +43,7 @@ the details below, you can refer to working code samples:
 -   [Java](https://github.com/adobe/pdfservices-java-sdk-samples/blob/master/src/main/java/com/adobe/pdfservices/operation/samples/customconfigurations/ExportPDFWithSpecifiedRegion.java)
 -   [.NET](https://github.com/adobe/PDFServices.NET.SDK.Samples/blob/master/ExportPDFWithSpecifiedRegion/Program.cs)
 -   [Node.js](https://github.com/adobe/pdfservices-node-sdk-samples/blob/master/src/customconfigurations/export-pdf-with-specified-region.js)
--   [Python](https://github.com/adobe/pdfservices-python-sdk-samples/blob/master/src/extractpdf/extract_txt_from_pdf_with_specified_region.py)
+-   [Python](https://github.com/adobe/pdfservices-python-sdk-samples/blob/main/src/customconfigurations/export_pdf_with_specified_region.py)
 
 Available properties:
 
@@ -288,11 +288,6 @@ Available properties:
 -   **timeout**: Default: 400000. The maximum allowed time in
     milliseconds for establishing a connection, sending a request, and
     getting a response.
--   **readWriteTimeout**: Default: 10000. The maximum allowed time in
-    milliseconds to read or write data after connection is established.
--   **processingTimeout**: Default: 600000. The maximum allowed time
-    in milliseconds for processing the documents. Any operation taking more time than the specified `processingTimeout` will result in an operation timeout exception.
-    - **Note :** It is advisable to set the `processingTimeout` to higher values for processing large files.
 
 Override the timeout properties via a custom `ClientConfig` class:
 
@@ -303,8 +298,6 @@ Override the timeout properties via a custom `ClientConfig` class:
 ```javascript
 ClientConfig clientConfig = ClientConfig.ConfigBuilder()
     .WithTimeout(40000)
-    .WithReadWriteTimeout(10000)
-    .WithProcessingTmeout(900000)
     .Build();
 ```
 

@@ -250,7 +250,7 @@ For security reasons you may wish to confirm the installer's authenticity. To do
 4.  Verify the hash you generated matches the value in the .sha1 file.
 
 ```
-d9ec6a4b687b99d4763891114efc197c1b312ad1
+29d29e4fee46bcb6891966a09124d74228ee2b50
 ```
 
 #### Logging
@@ -322,14 +322,14 @@ Jumpstart your development by bookmarking or downloading the following key resou
 
 The samples project requires the following:
 
--   NET: version 6.0 or above
+-   NET: version 8.0 or above
 -   A build Tool: Either Visual Studio or .NET Core CLI.
 
 #### Authentication
 
 Once you complete the [Getting Credentials](https://documentservices.adobe.com/dc-integration-creation-app-cdn/main.html), a zip or json file automatically downloads that contains content whose structure varies based on whether you opted to download personalized code samples.
 
--   **Personalized Download**: Downloads the zip which contains `adobe-dc-pdf-services-sdk-java-samples` with a preconfigured `pdfservices-api-credentials.json` file.
+-   **Personalized Download**: Downloads the zip which contains `adobe-DC.PDFServices.SDK.NET.Samples` with a preconfigured `pdfservices-api-credentials.json` file.
 -   **Non Personalized Download**: Downloads the `pdfservices-api-credentials.json` with your preconfigured credentials.
 
 After downloading the zip, you can run the samples in the zip directly by setting up the two environment variables `PDF_SERVICES_CLIENT_ID` and `PDF_SERVICES_CLIENT_SECRET` by running the following cammands :
@@ -393,7 +393,7 @@ For security reasons you may wish to confirm the installer's authenticity. To do
 3.  Verify the hash in the downloaded file matches the value published here.
 
 ```
-5SGuLhMkPpS3pjGkbMKQZNEtttSQZDeCqE2n3CMiNBbJcdooJ8V/lMB+fOTJF0Y8UhdaoNvxN0ZynDqjxGvCVg==
+GVi6LEnaHwb0C4ZvhRbu3HyGwpDElG6FMhjCwmYsmSGS1hexoArNVvF7rY1T4ygHkdhY6WEEiVobwwLmoAraBw==
 ```
 
 #### Logging
@@ -507,7 +507,7 @@ For security reasons you may wish to confirm the installer's authenticity. To do
 3.  Verify the hash in the downloaded file matches the value published here.
 
 ```
-sha512-rDe5Er+pss0RJWt+ZUTCRw2sS9mwiD7mqPj0k0YGLzDdm8uZeGx3D7q4OfVoCZKR7ESBn8DlzDekXQM4P4WqhA==
+sha512-ZvwGfMlGa0mGK5HpPAdTTlsaeKKPLEbVfAeLsHr7YAQ6NO7cVkbxaPqV3Ng8dpq4mNj5Ah0Y1Q80uTjLb0Qf+A==
 ```
 
 #### Logging
@@ -636,14 +636,14 @@ For security reasons you may wish to confirm the installer's authenticity. To do
 1.  After downloading the package zip, run following command
 
 ```
-pip hash <download_dir>/pdfservices-sdk-4.0.0.tar.gz
+pip hash <download_dir>/pdfservices-sdk-4.1.0.tar.gz
 ```
 
 2.  Above command will return the hash of downloaded package.
 3.  Verify the hash matches the value published here.
 
 ```
-9537bf4659d3e939b86f0d925dec2eafc1fc533d09c96674791389b09c88e8c9
+ec24e0ddb8da9a968e8b8aa94203f48afb496dc99e505f6debcf0c2d51307cd2
 ```
 
 ## Public API
